@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>doLogin</servlet-name>
+    <servlet-class>cn.servlet.doLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>doRegister</servlet-name>
+    <servlet-class>cn.servlet.doRegister</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addStudent</servlet-name>
+    <servlet-class>cn.servlet.addStudent</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delStudent</servlet-name>
+    <servlet-class>cn.servlet.delStudent</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>selectAllPro</servlet-name>
+    <servlet-class>cn.servlet.selectAllPro</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>selectDeal</servlet-name>
+    <servlet-class>cn.servlet.selectDeal</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>selectTop10</servlet-name>
+    <servlet-class>cn.servlet.selectTop10</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getAveHeart</servlet-name>
+    <servlet-class>cn.servlet.getAveHeart</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>selectAllChufang</servlet-name>
+    <servlet-class>cn.servlet.selectAllChufang</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>doUpLoad</servlet-name>
+    <servlet-class>cn.servlet.doUpLoad</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>upHeart</servlet-name>
+    <servlet-class>cn.servlet.upHeart</servlet-class>
+  </servlet>
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>upOrder</servlet-name>
+    <servlet-class>cn.servlet.upOrder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>doLogin</servlet-name>
+    <url-pattern>/servlet/doLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>upHeart</servlet-name>
+    <url-pattern>/servlet/upHeart</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>upOrder</servlet-name>
+    <url-pattern>/servlet/upOrder</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectAllPro</servlet-name>
+    <url-pattern>/servlet/selectAllPro</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectDeal</servlet-name>
+    <url-pattern>/servlet/selectDeal</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectTop10</servlet-name>
+    <url-pattern>/servlet/selectTop10</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getAveHeart</servlet-name>
+    <url-pattern>/servlet/getAveHeart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectAllChufang</servlet-name>
+    <url-pattern>/servlet/selectAllChufang</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>doUpLoad</servlet-name>
+    <url-pattern>/servlet/doUpLoad</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>doRegister</servlet-name>
+    <url-pattern>/servlet/doRegister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addStudent</servlet-name>
+    <url-pattern>/servlet/addStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delStudent</servlet-name>
+    <url-pattern>/servlet/delStudent</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>LoginFillter</filter-name>
+    <filter-class>cn.filter.LoginFillter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFillter</filter-name>
+    <url-pattern>/pages/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>charSet</filter-name>
+    <filter-class>cn.filter.CharEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>charSet</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <listener>
+    <listener-class>cn.util.SocketListener</listener-class>
+  </listener>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/notFoundError.jsp</location>
+  </error-page>
+</web-app>

@@ -1,0 +1,260 @@
+@CHARSET "UTF-8";
+
+body {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: blue
+}
+
+a:VISITED {
+    color: blue
+}
+
+a:hover {
+    color: orange;
+}
+
+#name, #pwd {
+
+}
+
+#profile {
+    width: 300px;
+}
+
+#operate {
+    width: 150px;
+}
+
+#addStu {
+    text-align: right;
+    padding-right: 50px
+}
+
+#stuDetailList td:FIRST-CHILD {
+    width: 150px;
+    text-align: left;
+    padding-left: 1em
+}
+
+#stuDetailList td:LAST-CHILD {
+    width: 300px;
+    text-align: left;
+    padding-left: 1em
+}
+
+#loginHit {
+    display: inline;
+    color: red;
+}
+ul
+{
+    width: 100%;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+li
+{
+    float:left;
+    width:20%;
+}
+a:link,a:visited
+{
+    display:block;
+    height: 80px;
+    line-height: 80px;
+    font-weight:bold;
+    font-size: 25px;
+    color:#ffffff;
+    background-color:rgba(0,0,0,0.3);
+    text-align:center;
+    padding:0;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+a:hover,a:active
+{
+    background-color:#0F7FD0;
+}
+#myDiv {
+
+    top: 120px;
+
+    position: relative;
+
+    margin: auto auto auto auto;/*居中效果*/
+
+    /*background-color: darkgray;*/
+
+    background-color: transparent;
+
+    width: 600px;
+
+    height: 700px;
+
+}
+
+/*登录的总体框架设置，距离顶部的距离、相对定位、居中、背景颜色、高度和宽度*/
+
+
+
+#myForm {
+
+    position: relative;
+
+    top: 30px;
+
+    margin: auto auto auto auto;
+
+    background-color: blanchedalmon;
+
+    width: 550px;
+
+    height: 500px;
+
+}
+#usernameDiv,#passwordDiv,#repasswordDiv,#mailboxDiv,#phoneDiv,#vercodeDiv {
+
+    color:#ffffff;
+
+    background-color:rgba(0,0,0,0.3);
+
+    height: 34px;
+
+    border: 1px solid #CCCCCC;
+
+}
+
+/*对各个div 的大体设置*/
+
+#passwordDiv,#repasswordDiv,#mailboxDiv,#phoneDiv,#vercodeDiv {
+
+    margin-top: 30px;
+
+}
+
+/*对个别div的高度距离调整*/
+
+#usernameDiv input,#passwordDiv input,#repasswordDiv input,#mailboxDiv input,#phoneDiv input,#vercodeDiv input {
+
+    padding-left: 8px;
+
+    margin-left: 50px;
+
+    width: 190px;
+
+    height: 28px;
+
+    border: 2px solid #0F7FD0;
+
+    font-size: 20px;
+
+}
+
+/*对输入框中的样式进行设置*/
+
+#repasswordDiv input,#mailboxDiv input,#phoneDiv input {
+
+    margin-left: 14px;
+
+}
+
+
+
+#vercodeDiv input {
+
+    margin-left: 32px;
+
+}
+
+/*个别左边距离矫正*/
+
+#submitDiv {
+
+    margin-top: 50px;
+
+}
+
+/*对提交按钮div的距离设置*/
+
+#submitDiv input {
+
+    font-family:  "微软雅黑";
+
+    font-size: large;
+
+    font-style: bold;
+
+    color:#ffffff;
+
+    background-color:rgba(0,0,0,0.3);
+
+    width: 100px;
+
+    height: 50px;
+
+}
+
+/*对提交按钮div的具体设置*/
+
+
+
+#submit {
+
+    margin-left: 200px;
+
+    border: none;
+
+    display: block;
+
+}
+
+#submit:hover {
+
+    background-color: black;
+
+    font-size: larger;
+
+    font-style: bold;
+
+    text-decoration: underline;
+
+    color: white;
+
+}
+
+/*对提交按钮的设置*/
+
+#submitDiv input:hover{
+    background-color:#0F7FD0;
+}
+
+.s {
+
+    margin-left: 60px;
+
+    font-family: "微软雅黑";
+
+    font-size: large;
+
+}
+
+/*对span中的字体的设置*/
+
+.spanStyle {
+
+    color: red;
+    font-family: "微软雅黑";
+    font-size: larger;
+    margin-left: 170px;
+
+}
+
+/*修改后面*的颜色来确认正确错误*/
